@@ -1,7 +1,6 @@
-import moment from 'moment';
-
 export default (req, res) => {
-    res.json({
-        currentTime : moment().format()
+    res.status(404).json({
+        error: "You lost here... 💩",
+        status: 404
     })
 }
