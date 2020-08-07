@@ -1,0 +1,6 @@
+# Basic End Ponits
+@ApiKey = 5be70668e0ab4a5a9a138a62c20fdc0e
+@BaseUrl = https://newsapi.org/v2
+
+#Top Headings
+GET {{BaseUrl}}/top-headlines?country=in&apiKey={{ApiKey}}

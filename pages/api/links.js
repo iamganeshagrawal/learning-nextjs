@@ -5,7 +5,7 @@ export default async (req, res) => {
     axios
         .post(DB_SERVER, {
             operation: "sql",
-            sql: "select _id, title, url from linksDB.links"
+            sql: "select _id, title, url from linksDB.links ORDER BY pos ASC"
         },
         {
             auth: {
