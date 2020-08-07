@@ -2,8 +2,9 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import Link from 'next/link'
 
+const categoriesList = "business entertainment general health science sports technology".split(" ");
+
 const CategoryNews = ({category, articals, query, params}) => {
-    const categoriesList = "business entertainment general health science sports technology".split(" ");
     useEffect(()=>{
         console.log(category)
         console.log(params)
